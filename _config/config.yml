@@ -1,0 +1,11 @@
+---
+Name: shopgeocodingconfig
+After: 'shop/*'
+---
+SilverShop\Model\Address:
+  extensions:
+    - SilverShop\Geocoding\Extensions\AddressGeocoding
+  enable_geocoding: true
+Page:
+  extensions:
+    - SilverShop\Geocoding\Extensions\GeocodedUserInfo
